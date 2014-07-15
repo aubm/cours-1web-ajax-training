@@ -12,12 +12,12 @@ Votre partie du travail consiste à réaliser l'interface suivante.
 
 ## Spécifications ##
 
-La première partie de la page (**New todo**) comporte un formulaire permettant d'ajouter une nouvelle Todo.
-Une clic sur le bouton Add doit, dans un premier temps, envoyer une requête au webservice afin d'ajouter cette nouvelle entrée. Puis ajouter une nouvelle ligne dans le tableau de la deuxième partie de la page (**To do** ).
+La première partie de la page ( **New todo** ) comporte un formulaire permettant d'ajouter une nouvelle Todo.
+Une clic sur le bouton Add doit, dans un premier temps, envoyer une requête au webservice afin d'ajouter cette nouvelle entrée. Puis ajouter une nouvelle ligne dans le tableau de la deuxième partie de la page ( **To do** ).
 
 Dans cette deuxième partie, il est possible de supprimer une Todo en cliquant sur le bouton Delete. Au clic sur ce bouton, vous devez envoyer la requête au webservice permettant de supprimer cette Todo de la base de données, puis supprimer cette entrée du tableau HTML.
 
-Enfin au clic sur l'icon state, la Todo doit être "checked out" et passée automatiquement dans la troisième et dernière partie de la page (**Done**).
+Enfin au clic sur l'icon state, la Todo doit être "checked out" et passée automatiquement dans la troisième et dernière partie de la page ( **Done** ) .
 
 L'ensemble de ces actions s'effectuer **sans rechargement de la page**. Vous aurez donc besoin d'utiliser **Ajax** pour communiquer avec le webservice.
 
@@ -58,3 +58,12 @@ Form-Data :
 
 Une collection postman au format JSON est disponible dans ce repository pour tester directement le webservice indépendamment de l'application client.
 
+## Outils ##
+
+Le but de cet exercice est de manipuler Ajax avec ou sans jQuery. Vous n'êtes pas obligé de respecter strictement la structure proposée. Cependant afin de gagner du temps, vous pouvez directement commencer par éditer le fichier dans `js/app.js`.
+
+A noter que ce fichier comporte déjà deux variables. Il s'agit de variables contenant des templates HTML pour les éléments des tableaux. Pour utiliser ces templates, vous pouvez utiliser la librairie `Mustache` qui est déjà importée dans le projet.
+
+Vous pouvez vous rendre sur le site officielle de cette librairie pour mieux comprendre son utilisation. Cet extrait de code devrait cependant vous aider à en comprendre l'essentiel.
+
+`var newTodoElement = Mustache.render(todoTemplate, todoData);`
